@@ -1,0 +1,8 @@
+#Ignore folder named 'data'
+data/
+
+#ignore folder named 'img'
+img/
+
+#ignore folder named 'upload'
+uploads/
