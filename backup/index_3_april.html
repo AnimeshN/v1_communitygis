@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Community GIS.</title>
+        <title>Community GIS</title>
         <link rel="stylesheet" href="src/leaflet.css">
         <link rel="stylesheet" href="src/css/bootstrap.css">
         <link rel="stylesheet" href="src/plugins/L.Control.Pan.css">
@@ -19,11 +19,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="src/js/bootstrap-dropdownhover.js"></script>
-
+        
 
 
         <script src="src/leaflet-src.js"></script>
-
         <!-- <script src="src/jquery-3.2.0.min.js"></script> -->
         <script src="src/plugins/L.Control.Pan.js"></script>
         <script src="src/plugins/L.Control.Zoomslider.js"></script>
@@ -38,7 +37,6 @@
         <script src="src/plugins/leaflet.ajax.min.js"></script>
         <script src="src/js/modernizr-custom.js"></script>
         <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
-        <script src='https://unpkg.com/shp-write@latest/shpwrite.js'></script>
 
         <script type="text/javascript" src="src/credits/leaflet-control-credits.js"></script>
         <link rel="stylesheet" href="src/credits/leaflet-control-credits.css" />
@@ -71,10 +69,10 @@
             color: blue;
             }
             #menu__link{
-              color: aqua;
+              color: aqua;  
             }
 
-
+            
 
             .col-xs-12, .col-xs-6, .col-xs-4 {
                 padding:3px;
@@ -83,36 +81,36 @@
             #divProject {
                 background-color: beige;
             }
-
+            
             #divBUOWL {
                 background-color: #ffffb3;
             }
-
+            
             #divEagle {
                 background-color: #ccffb3;
                 width: auto;
             }
-
+            
             #divRaptor {
                 background-color: #e6ffff;
             }
-
+            
             .errorMsg {
                 padding:0;
                 text-align:center;
                 background-color:darksalmon;
             }
-
-
+            
+        
 
         </style>
     </head>
     <body>
-
+        
         <div id="side-bar">
                 <!-- Main container -->
                 <div >
-
+                    
                     <!-- <button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button> -->
                     <nav id="ml-menu" >
                         <!-- <button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button> -->
@@ -127,7 +125,7 @@
                                 <li class="menu__item" role="menuitem"><a class="menu__link" id="locategoa" data-submenu="submenu-6" aria-owns="submenu-6" href="#">Goa<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li>
                                 <li class="menu__item" role="menuitem"><a class="menu__link" id="upload_data" data-submenu="submenu-7" aria-owns="submenu-7" href="#">Upload Data<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li>
                                 <li class="menu__item" role="menuitem"><a class="menu__link" id="voter_list" data-submenu="submenu-8" aria-owns="submenu-8" href="#">Voter List Data<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li>
-
+                                 
                                 <li class="menu__item" role="menuitem"><a class="menu__link" id="locatepalghar" data-submenu="submenu-9" aria-owns="submenu-9" href="#">Palghar<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li>
 
                                 <li class="menu__item" role="menuitem"><a class="menu__link" id="locateadoshi" data-submenu="submenu-10" aria-owns="submenu-10" href="#">Water<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li>
@@ -148,7 +146,7 @@
                                   <li class="menu__item" role="menuitem"><a class="menu__link" href="#">H west ward</a></li>
                                   <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1-6" aria-owns="submenu-1-1-6" id ='pads' href="#">Powai Area Developoment Scheam(PADS)</a></li>
 
-
+                    
                             </ul>
                             <!-- Submenu 1-1-1 -->
                             <ul data-menu="submenu-1-1-1" id="submenu-1-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Education">
@@ -161,7 +159,7 @@
 
                             </ul>
 
-
+                            
 
                             <!-- Submenu 1-1-3 -->
                             <ul data-menu="submenu-1-1-3" id="submenu-1-1-3" class="menu__level" tabindex="-1" role="menu" aria-label="S Ward">
@@ -177,7 +175,7 @@
 
                             </ul>
 
-
+                            
                             <!-- Submenu 1-1-4 -->
                             <ul data-menu="submenu-1-1-4" id="submenu-1-1-4" class="menu__level" tabindex="-1" role="menu" aria-label="L Ward">
                                 <li class="menu__item" role="menuitem"><a id = 'lward_building_layer' class="menu__link" href="#">Building</a></li>
@@ -226,7 +224,7 @@
                                 <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-4-7-2" aria-owns="submenu-1-4-7-2" href="#">Building: Composting Wise<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li>
                                 <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-4-7-3" aria-owns="submenu-1-4-7-2" href="#">Building: Weight Wise<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li>
 
-
+                                
                                 <!-- <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Building: Composting wise</a></li> -->
                                 <li class="menu__item" role="menuitem"><a id="compseg" class="menu__link" href="#">Corporation Ward: Seggregation wise</a></li>
                                 <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Corporation Ward: Composting wise</a></li>
@@ -314,7 +312,7 @@
                 </div>
                 <div class="" id="divEagleData"></div>
             </div> -->
-
+                           
 
                             <!-- Submenu 2 -->
                             <ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
@@ -329,13 +327,13 @@
 
                              <!-- Submenu 2-2 -->
                              <ul data-menu="submenu-2-2" id="submenu-2-2" class="menu__level" tabindex="-1" role="menu" aria-label="Maharashra">
-
+                                    
                                     <li class="menu__item" role="menuitem"><a id = 'village_layer_new' class="menu__link" data-submenu="submenu-2-2-1" aria-owns="submenu-2-2-1" href="#">Village Amenities (2700)</a></li>
                                     <li class="menu__item" role="menuitem"><a id = 'hlpca_new' class="menu__link" data-submenu="submenu-2-2-2" aria-owns="submenu-2-2-2" href="#">Household Amenities(HLPCA)</a></li>
                                     <li class="menu__item" role="menuitem"><a id = 'town2700_layer' class="menu__link" data-submenu="submenu-2-2-3" aria-owns="submenu-2-2-3" href="#">Town Amenities( 2700)</a></li>
                                     <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2-2-4" aria-owns="submenu-2-2-4" href="#">Demography</a></li>
                                     <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2-2-5" aria-owns="submenu-2-2-5" href="#">Waterbodies</a></li>
-
+                                   
                                   <!--   <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Admin boundries</a></li>
                                     <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Settelments</a></li>
                                     <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Topography ( DEM, Watershed)</a></li>
@@ -347,147 +345,29 @@
                                 <!-- Submenu 2-2-1 -->
                             <ul data-menu="submenu-2-2-1" id="submenu-2-2-1" class="menu__level" tabindex="-1" role="menu" aria-label="Village Amenities">
                                     <li class="menu__item" role="menuitem"><a class="menu__link" id = '' data-submenu="submenu-2-2-1-1" aria-owns="submenu-2-2-1-1" href="#">Varhad</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' data-submenu="submenu-2-2-1-2" aria-owns="submenu-2-2-1-2" href="#">Marathwada</a></li>
-                                      <li class="menu__item" role="menuitem"><a class="menu__link" id = '' data-submenu="submenu-2-2-1-3" aria-owns="submenu-2-2-1-3" href="#">Konkan</a></li>
-                                    <!-- <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Konkan</a></li> -->
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' data-submenu="submenu-2-2-1-4" aria-owns="submenu-2-2-1-4" href="#">Vidarbha</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = ''data-submenu="submenu-2-2-1-5" aria-owns="submenu-2-2-1-5" href="#">Khandesh</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' data-submenu="submenu-2-2-1-6" aria-owns="submenu-2-2-1-6"href="#">Paschim Maharashtra</a></li>
+                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Marathwada</a></li>
+                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Konkan</a></li>
+                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Vidarbha</a></li>
+                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Khandesh</a></li>
+                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Paschim Maharashtra</a></li>    
                             </ul>
 
                             <!-- Submenu 2-2-1-1 -->
-                            <ul data-menu="submenu-2-2-1-1" id="submenu-2-2-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Varhad">
-                                    <div style="display: inline-flex !important;">
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'vakola' href="#">Akola</span></a></li>
-                                    <li id = 'downloadvakola' href="#"><button onclick="downloadLayer('abc')" class="btn btn-secondary"><span class="glyphicon glyphicon-download"></button></li>
-                                    </div>
+                            <ul data-menu="submenu-2-2-1-1" id="submenu-2-2-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Mumbai">
+                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'vakola' href="#">Akola</a></li>
                                     <li class="menu__item" role="menuitem"><a class="menu__link" id = 'vamravati' href="#">Amrawati </a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'vbuldana' href="#">Buldana</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'vyavatmal' href="#">Yavatmal</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'vwashim' href="#">Washim</a></li>
+                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Buldana</a></li>
+                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Yavatmal</a></li>
+                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Washim</a></li>
                             </ul>
-
-                            <!-- Submenu 2-2-1-2 -->
-                            <ul data-menu="submenu-2-2-1-2" id="submenu-2-2-1-2" class="menu__level" tabindex="-1" role="menu" aria-label="Marathwada">
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'maurangabad' href="#">Aurangabad</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'mbeed' href="#">Beed </a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'mjalna' href="#">Jalna</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'mosmanabad' href="#">Osmanabad</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'mnanded' href="#">Nanded</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'mlatur' href="#">Latur</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'mparbhani' href="#">Parbhani</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'mhingoli' href="#">Hingoli</a></li>
-                            </ul>
-                            <!-- Submenu 2-2-1-3 -->
-                            <ul data-menu="submenu-2-2-1-3" id="submenu-2-2-1-3" class="menu__level" tabindex="-1" role="menu" aria-label="Konkan">
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'kmumbai city ' href="#">Mumbai City</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'kmumbai suburban' href="#">Mumbai Suburban </a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'kthane' href="#">Thane</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'kpalghar' href="#">Palghar</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'kraigad' href="#">Raigad</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'kratnagiri' href="#">Ratangiri</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'ksindhudurg' href="#">Sindhudurg</a></li>
-                            </ul>
-                            <!-- Submenu 2-2-1-4 -->
-                            <ul data-menu="submenu-2-2-1-4" id="submenu-2-2-1-4" class="menu__level" tabindex="-1" role="menu" aria-label="Vidarbha">
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'vbhandara' href="#">Bhandara</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'vgadchiroli' href="#">Gadchiroli</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = 'vondi' href="#">Gondia</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Nagpur</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Wardha</a></li>
-                            </ul>
-                            <!-- Submenu 2-2-1-5 -->
-                            <ul data-menu="submenu-2-2-1-5" id="submenu-2-2-1-5" class="menu__level" tabindex="-1" role="menu" aria-label="Khandseh">
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Ahmednagar</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Dhule</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Jalgaon</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Nandurbar</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Nashik</a></li>
-                            </ul>
-                            <!-- Submenu 2-2-1-6 -->
-                            <ul data-menu="submenu-2-2-1-6" id="submenu-2-2-1-6" class="menu__level" tabindex="-1" role="menu" aria-label="Paschim Maharashtra">
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Kolaphur</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Pune</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Sangli</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Satara</a></li>
-                                    <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Solapur</a></li>
-                            </ul>
-
-                            <!-- Submenu 2-2-2 -->
-                            <ul data-menu="submenu-2-2-2" id="submenu-2-2-2" class="menu__level" tabindex="-1" role="menu" aria-label="Household Aminities">
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' data-submenu="submenu-2-2-2-1" aria-owns="submenu-2-2-2-1" href="#">Varhad</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' data-submenu="submenu-2-2-2-2" aria-owns="submenu-2-2-2-2" href="#">Marathwada</a></li>
-                                <li class="menu__item" role="menuitem"><a class="menu__link" id = '' data-submenu="submenu-2-2-2-3" aria-owns="submenu-2-2-2-3" href="#">Konkan</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' data-submenu="submenu-2-2-2-4" aria-owns="submenu-2-2-2-4" href="#">Vidarbha</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = ''data-submenu="submenu-2-2-2-5" aria-owns="submenu-2-2-2-5" href="#">Khandesh</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' data-submenu="submenu-2-2-2-6" aria-owns="submenu-2-2-2-6"href="#">Paschim Maharashtra</a></li>
-                      </ul>
-                      <!-- Submenu 2-2-2-1 -->
-                      <ul data-menu="submenu-2-2-2-1" id="submenu-2-2-2-1" class="menu__level" tabindex="-1" role="menu" aria-label="Mumbai">
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = 'vakola' href="#">Akola</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = 'vamravati' href="#">Amrawati </a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Buldana</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Yavatmal</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Washim</a></li>
-                      </ul>
-
-                      <!-- Submenu 2-2-2-2 -->
-                      <ul data-menu="submenu-2-2-2-2" id="submenu-2-2-2-2" class="menu__level" tabindex="-1" role="menu" aria-label="Marathwada">
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Aurangabad</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Beed </a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Jalna</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Osmanabad</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Nanded</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Latur</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Parbhani</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Hingoli</a></li>
-                      </ul>
-                      <!-- Submenu 2-2-2-3 -->
-                      <ul data-menu="submenu-2-2-2-3" id="submenu-2-2-2-3" class="menu__level" tabindex="-1" role="menu" aria-label="Konkan">
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Mumbai City</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Mumbai Suburban </a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Thane</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Palghar</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Raigad</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Ratangiri</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Sindhudurg</a></li>
-                      </ul>
-                      <!-- Submenu 2-2-2-4 -->
-                      <ul data-menu="submenu-2-2-2-4" id="submenu-2-2-2-4" class="menu__level" tabindex="-1" role="menu" aria-label="Vidarbha">
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Bhandara</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Gadchiroli</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Gondia</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Nagpur</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Wardha</a></li>
-                      </ul>
-                      <!-- Submenu 2-2-2-5 -->
-                      <ul data-menu="submenu-2-2-2-5" id="submenu-2-2-2-5" class="menu__level" tabindex="-1" role="menu" aria-label="Khandseh">
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Ahmednagar</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Dhule</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Jalgaon</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Nandurbar</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Nashik</a></li>
-                      </ul>
-                      <!-- Submenu 2-2-2-6 -->
-                      <ul data-menu="submenu-2-2-2-6" id="submenu-2-2-2-6" class="menu__level" tabindex="-1" role="menu" aria-label="Paschim Maharashtra">
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Kolaphur</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Pune</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Sangli</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Satara</a></li>
-                              <li class="menu__item" role="menuitem"><a class="menu__link" id = '' href="#">Solapur</a></li>
-                      </ul>
-
-
-
-
 
 
                               <!-- Submenu 3 -->
                             <ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Education">
                                     <li class="menu__item" role="menuitem"><a class="menu__link"  href="#">India</a></li>
                                     <li class="menu__item" role="menuitem"><a class="menu__link"  data-submenu="submenu-3-2" aria-owns="submenu-3-2" href="#">Maharashra<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li>
-                            </ul>
-
+                            </ul> 
+                            
                             <ul data-menu="submenu-3-2" id="submenu-3-2" class="menu__level" tabindex="-1" role="menu" aria-label="Maharashtra">
                                 <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Basic</a></li>
                                 <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Enrollment</a></li>
@@ -504,15 +384,15 @@
                                 <li class="menu__item" role="menuitem"><a class="menu__link"  href="#">India</a></li>
                                 <li class="menu__item" role="menuitem"><a class="menu__link"  href="#">Maharashra</a></li>
 
-                                <li class="menu__item" role="menuitem"><a class="menu__link" id='malegoan' href="#">Malegaon</a></li>
-                                <li class="menu__item" role="menuitem"><a class="menu__link"  id = 'bhivandi' href="#">Bhivandi</a></li>
+                                <li class="menu__item" role="menuitem"><a class="menu__link"  href="#">Malegaon</a></li>
+                                <li class="menu__item" role="menuitem"><a class="menu__link"  href="#">Bhivandi</a></li>
 
-                        </ul>
-
+                        </ul> 
+                        
                               <ul data-menu="submenu-5" id="submenu-5" class="menu__level" tabindex="-1" role="menu" aria-label="Pune">
                                 <li class="menu__item" role="menuitem"><a id="punebuild" class="menu__link" data-submenu="submenu-5-1" aria-owns="submenu-5-1" href="#">Pune Building Footprints<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li>
                                 <li class="menu__item" role="menuitem"><a id="puneroad" class="menu__link" data-submenu="submenu-5-2" aria-owns="submenu-5-2" href="#">Pune Road Layer<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li>
-
+                                
                                 <li class="menu__item" role="menuitem"><a id="punephotos" class="menu__link" data-submenu="submenu-5-2" aria-owns="submenu-5-2" href="#">Pune Show Photos<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li>
                                 <!-- <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-3" aria-owns="submenu-1-3" href="#">Analytics<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li>
                                 <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-4" aria-owns="submenu-1-4" href="#">SWM<span class="glyphicon glyphicon glyphicon-menu-right"></span></a></li> -->
@@ -521,7 +401,7 @@
                         <!-- Submenu 6 -->
                                 <ul data-menu="submenu-6" id="submenu-6" class="menu__level" tabindex="-1" role="menu" aria-label="goa">
                                     <li class="menu__item" role="menuitem"><a class="menu__link"  id = 'locateponda' data-submenu="submenu-6-1" aria-owns="submenu-6-1" href="#">Ponda</a></li>
-                            </ul>
+                            </ul> 
                             <!-- Submenu 6-1 -->
                             <ul data-menu="submenu-6-1" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Health">
                                 <li class="menu__item" role="menuitem"><a class="menu__link" id = 'ponda_points' href="#">points</a></li>
@@ -569,16 +449,16 @@
 
                             <!-- Submenu 10 -->
                             <ul data-menu="submenu-10" id="submenu-10" class="menu__level" tabindex="-1" role="menu" aria-label="Water">
-
+                                 
                                  <li class="menu__item" role="menuitem"><a class="menu__link" id = 'adoshimarker' href="#">Adoshi</a></li>
-
+                                 
                             </ul>
 
 
-                        </ul>
+                        </ul> 
                         </div>
                     </nav>
-
+                    
                 </div>
                 <!-- /view -->
                 <script src="src/js/classie.js"></script>
@@ -594,30 +474,30 @@
                             // itemsDelayInterval : 60, // delay between each menu item sliding animation
                             onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
                         });
-
+            
                     // mobile menu toggle
                     var openMenuCtrl = document.querySelector('.action--open'),
                         closeMenuCtrl = document.querySelector('.action--close');
-
+            
                     // openMenuCtrl.addEventListener('click', openMenu);
                     // closeMenuCtrl.addEventListener('click', closeMenu);
-
+            
                     function openMenu() {
                         classie.add(menuEl, 'menu--open');
                         closeMenuCtrl.focus();
                     }
-
+            
                     // function closeMenu() {
                     //     classie.remove(menuEl, 'menu--open');
                     //     openMenuCtrl.focus();
                     // }
-
+            
                     // simulate grid content loading
                     var gridWrapper = document.querySelector('.content');
-
+            
                     function loadDummyData(ev, itemName) {
                         ev.preventDefault();
-
+            
                         // closeMenu();
                         // gridWrapper.innerHTML = '';
                         // classie.add(gridWrapper, 'content--loading');
@@ -634,16 +514,16 @@
         <div id='popupContent'></div>
 
        <div class="leaflet-bottom leaflet-right">
-        <input type="image" onclick="location.href = 'www.makerghat.org';" src="img/logo.png" alt="MakerGHAT" width="150" height="100">
+        <input type="image" onclick="location.href = 'www.makerghat.org';" src="img/logo.png" alt="MakerGHAT" width="150" height="100"> 
     </div>
 
-
+    
 
 
 
 
         <script>
-
+            
             var mymap;
             var lyrOSM;
             var lyrWatercolor;
@@ -669,40 +549,39 @@
             var pondahl,pondasl,pondawl,pondafl,pondaol,pondalinelyr,pondapointlyr,pondapolygonlyr,voter_list;
             var psl,pgl,pbul,pbl,lwardbl,raill,pondl,polyl,osmbl,mrll,hvll,bfrl,bfhvll,villagel,hlpcal,townl;
             var mokhadavl;
-            var info = L.control({position:'topleft'});
             var source = L.wms.source(
                 "http://13.82.229.27/geoserver/wfs",
                 {
                     "format": "image/png",
                     "transparent": "true"
-                }
+                }        
                 );
-
+            
             $(document).ready(function(){
 
                  $('#text').hide();
-
+    
                      $("#driver").click(function() {
                      $('#text').toggle();
                      });
 
                      $('#upload').on('click', function() {
-    var file_data = $('#fileToUpload').prop('files')[0];
-    var form_data = new FormData();
+    var file_data = $('#fileToUpload').prop('files')[0];   
+    var form_data = new FormData();                  
     form_data.append('fileToUpload', file_data);
-    // alert(form_data);
+    // alert(form_data);                             
     $.ajax({
-        url: 'upload.php', // point to server-side PHP script
+        url: 'upload.php', // point to server-side PHP script 
         dataType: 'text',  // what to expect back from the PHP script, if anything
         cache: false,
         contentType: false,
         processData: false,
-        data: form_data,
+        data: form_data,                         
         type: 'post',
         success: function(php_script_response){
             alert(php_script_response); // display response from the PHP script, if any
         }
-
+        
      });
 });
                 mymap = L.map('mapdiv', {center:[19.0760, 72.8777], zoom:13, zoomControl:false, attributionControl:false});
@@ -712,9 +591,9 @@
                 // lyrOutdoors = L.tileLayer.provider('Thunderforest.Outdoors');
                 // lyrWatercolor = L.tileLayer.provider('Stamen.Watercolor');
                 mymap.addLayer(lyrOSM);
-
+                
                 // lyrChapultepec = L.imageOverlay('img/chapultepec.png', [[19.42993,-99.20843],[19.40621,-99.17453]], {opacity:0.5}).addTo(mymap);
-
+                
                 objBasemaps = {
                     "Open Street Maps": lyrOSM,
                     // "Topo Map":lyrTopo,
@@ -722,81 +601,73 @@
                     // "Outdoors":lyrOutdoors,
                     // "Watercolor":lyrWatercolor
                 };
-
+                
                 objOverlays = {
                     // "Chapultepec Image":lyrChapultepec
                 };
-
+                
                 ctlLayers = L.control.layers(objBasemaps, objOverlays).addTo(mymap);
-
+                
                 ctlPan = L.control.pan().addTo(mymap);
                 ctlZoomslider = L.control.zoomslider({position:'topright'}).addTo(mymap);
-
+                
                 // ctlMeasure = L.control.polylineMeasure().addTo(mymap);
                 ctlSidebar = L.control.sidebar('side-bar').addTo(mymap);
-
+                
                 ctlEasybutton = L.easyButton('glyphicon-transfer', function(){
-                   ctlSidebar.toggle();
+                   ctlSidebar.toggle(); 
                 }).addTo(mymap);
 
                 var helloPopup = L.popup().setContent('<h1>About US</h1><br><i>Primary objective of communitygis is to provide educational platform for learners to learn about spatial information and learn how these  modern tools can be used to solve real life problems. <br/><br/>It creates a platform for people who range from those who can contribute data ( mobile based point data collection to digitization of published maps) to those who can analyse the data to infer useful social knowledge.                    <br/><br/>It is a digital contraption needed to collect, aggregate , access and analyse data  finally provide decision support for to manipulate reality.                    <br/><br/>Since all source code is published , under GPL, any one can reproduce the technology , without any permission from makerGHAT.This has been created by volunteers and coordinated by www.makerghat.org<i>');
 
                 // var div = document.getElementById('Animesh');
-                // var customPopUp = '<div id = "animesh" '><h1>Animesh</h1></div>';
+                // var customPopUp = '<div id = "animesh" '><h1>Animesh</h1></div>';    
                 // document.getElementById("display").innerHTML = var_name;
                 // var addedLayerInfo = L.popup().setContent(customPopUp);
                 // L.easyButton('glyphicon glyphicon-question-sign', function(btn, map){
                 //     helloPopup.setLatLng(map.getCenter()).openOn(mymap);
                 // }).addTo(mymap);
 
-
+                
 
 
                 L.easyButton('glyphicon glyphicon-question-sign', function(btn, map){
                     addedLayerInfo.setLatLng(map.getCenter()).openOn(mymap);
                 }).addTo(mymap);
 
-                
+                var info = L.control({position:'topleft'});
 
                 info.onAdd = function (mymap) {
                     this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-                    this.update("<div id = 'boxdiv'><div>");
+                    this.update("hello");
                     return this._div;
                 };
 
                 info.update = function (props) {
                     this._div.innerHTML = (props) ;
                 };
-               
 
-
-                $("#bhivandi").click(function(){
-                     info.addTo(mymap);
-                    document.getElementById("boxdiv").innerHTML = "<h1>Download Bhivandi Map</h1><br><a href='img/Bhivandi/Bhiwandimap.jpg' download><img src = 'img/Bhivandi/Bhiwandimap.jpg 'width='104' height='142'></a> <br><button onclick= 'closeBhivandi()'>close</button>";
-
-                    });
-
-               
+                info.addTo(mymap);
                 ctlSearch = L.Control.openCageSearch({key: '3c38d15e76c02545181b07d3f8cfccf0',limit: 10}).addTo(mymap);
-
+                
                 ctlAttribute = L.control.attribution({position:'bottomleft'}).addTo(mymap);
                 ctlAttribute.addAttribution('OSM');
                 ctlAttribute.addAttribution('&copy; <a href="http://www.makerghat.org">makerGHAT</a>');
 
                 // ctlLogo = L.control.attribution({position:'bottomright'}).addTo(mymap);
-
+                
                 ctlScale = L.control.scale({position:'bottomleft', metric:false, maxWidth:200}).addTo(mymap);
                 ctlMouseposition = L.control.mousePosition().addTo(mymap);
-
+                
                 popZocalo = L.popup({maxWidth:200,keepInView:true});
                 popZocalo.setLatLng([19.43262, -99.13325]);
                 popZocalo.setContent("<h2>Water image</h2><img src='img/zocalo.jpg' width='200px'>");
-
+                
                 mymap.on('contextmenu', function(e) {
                     var dtCurrentTime = new Date();
                     L.marker(e.latlng).addTo(mymap).bindPopup(e.latlng.toString()+"<br>"+dtCurrentTime.toString());
                 });
-
+                
                 mymap.on('keypress', function(e) {
                     if (e.originalEvent.key=="l") {
                         mymap.locate();
@@ -814,7 +685,7 @@
                 //     iconSize: [38, 95],
                 //     iconAnchor: [22, 94],
                 //     popupAnchor: [-3, -76],
-
+                    
                 // });
                 // L.marker([50.505, 30.57], {icon: myIcon}).addTo(mymap);
 
@@ -829,94 +700,36 @@
                     // mrkCurrentLocation = L.circle(e.latlng, {radius:e.accuracy/2}).addTo(mymap);
                     // mymap.setView(e.latlng, 14);
                 });
-
+                
                 mymap.on('locationerror', function(e) {
                     console.log(e);
                     alert("Location was not found");
                 })
-
+                
                 mymap.on('zoomend', function(){
                     $("#zoom-level").html(mymap.getZoom());
                 });
-
+                
                 mymap.on('moveend', function(){
                     $("#map-center").html(LatLngToArrayString(mymap.getCenter()));
                 });
-
+                
                 mymap.on('mousemove', function(e){
                     $("#mouse-location").html(LatLngToArrayString(e.latlng));
                 });
-
+                
 
                 $("#vakola").click(function(){
-                    mymap.setView([20.7002, 77.0082], 9);
+                    mymap.setView([20.7002, 77.0082], 11);
                     addMyLayer("geonode:v_akola");
                 });
 
                 $("#vamravati").click(function(){
-                    mymap.setView([20.9374, 77.7796], 9);
+                    mymap.setView([20.9374, 77.7796], 11);
                     addMyLayer("geonode:v_amravati");
                 });
-                vbuldana
-                $("#vbuldana").click(function(){
-                    mymap.setView([20.4561, 76.3637], 9);
-                    addMyLayer("geonode:v_buldana");
-                });
+                   
 
-                $("#vyavatmal").click(function(){
-                    mymap.setView([20.3888, 78.1204], 9);
-                    addMyLayer("geonode:v_yavatmal");
-                });
-
-                $("#vwashim").click(function(){
-                    mymap.setView([20.1390, 77.1025], 9);
-                    addMyLayer("geonode:v_washim");
-                });
-
-                $("#maurangabad").click(function(){
-                    mymap.setView([19.8762, 75.3433], 9);
-                    addMyLayer("geonode:v_aurangabad");
-                });
-
-                $("#mbeed").click(function(){
-                    mymap.setView([18.9891, 75.7601], 9);
-                    addMyLayer("");
-                });
-
-              $("#mjalna").click(function(){
-                  mymap.setView([19.8297, 75.8800], 9);
-                  addMyLayer("geonode:v_jalna");
-              });
-
-              $("#mosmanabad").click(function(){
-                  mymap.setView([18.2070, 76.1784], 9);
-                  addMyLayer("geonode:v_osmanabad");
-              });
-
-              $("#mnanded").click(function(){
-                  mymap.setView([19.1383, 77.3210], 9);
-                  addMyLayer("geonode:v_nanded");
-              });
-
-              $("#mlatur").click(function(){
-                  mymap.setView([18.4088, 76.5604], 9);
-                  addMyLayer("geonode:v_latur");
-              });
-
-              $("#mparbhani").click(function(){
-                  mymap.setView([19.2644, 76.6413], 9);
-                  addMyLayer("geonode:v_parbhani");
-              });
-
-              $("#mhingoli").click(function(){
-                  mymap.setView([19.5781, 77.1025], 9);
-                  addMyLayer("geonode:v_hingoli");
-              });
-
-              $("#malegoan").click(function(){
-                  mymap.setView([20.5547, 74.5100], 13);
-                  addMyLayer("geonode:malegaon_wards");
-              });
                 $("#buildingLocate").click(function(){
                     addBuildingLayer();
                 });
@@ -944,7 +757,7 @@
                 $("#roadLayer").click(function(){
                     addRoadLayer();
                 });
-
+                
                 $("#punebuild").click(function(){
                     addPuneBuild();
                 });
@@ -955,7 +768,7 @@
                  $("#punephotos").click(function(){
                     addPunePhotos();
                 });
-
+                
                 $("#primary_school").click(function(){
                     addPrimaryLayer();
                 });
@@ -1044,7 +857,7 @@
 
                 $("#locateadoshi").click(function(){
                     mymap.setView([18.7601, 73.3318], 13);
-
+                    
                 });
 
                 $("#voter_list").click(function(){
@@ -1067,7 +880,7 @@
                     // mymap.openPopup(popZocalo);
                 });
 
-
+                
 
                 $("#locatepalghar").click(function(){
                     mymap.setView([19.9365, 73.3404], 11);
@@ -1122,69 +935,18 @@
                  $("#mokhada_village").click(function(){
                     addMokhadaVillageLayer();
                 });
-
+                
                 $("#sldOpacity").on('change', function(){
                     $("#image-opacity").html(this.value);
                     lyrChapultepec.setOpacity(this.value);
                 });
             }); //end of ready function
-
-            function downloadLayer(layername){
-            // var layer_to_download = source.getLayer('geonode:malegaon_wards');
-            var form = document.createElement("form");
-            form.method = "POST";
-            form.action = "http://13.82.229.27/geoserver/wfs";
-            var input = document.createElement("input");
-            input.type = "hidden";
-            input.name = "request";
-            input.value = "GetFeature";
-            form.appendChild(input);
-
-            var input = document.createElement("input");
-            input.type = "hidden";
-            input.name = "service";
-            input.value = "WFS";
-            form.appendChild(input);
-
-
-            var input = document.createElement("input");
-            input.type = "hidden";
-            input.name = "version";
-            input.value = "1.0.0";
-            form.appendChild(input);
-
-
-            var input = document.createElement("input");
-            input.type = "hidden";
-            input.name = "outputFormat"
-            input.value = "shape-zip";
-            form.appendChild(input);
-
-
-            var input = document.createElement("input");
-            input.type = "hidden";
-            input.name = "typeName";
-            // input.value="og:archsites";
-            input.value = layername;
-            form.appendChild(input);
-
-            // repeat the above 5 lines for all parameters
-            document.body.appendChild(form);
-            form.submit();
-
-            }
+           
 
             function LatLngToArrayString(ll) {
 //                console.log(ll);
                 return "["+ll.lat.toFixed(5)+", "+ll.lng.toFixed(5)+"]";
             }
-
-            
-
-                function closeBhivandi(){
-                    console.log('close');
-                    info.remove(mymap);
-                }
 
 
             function addDoshiMarker() {
@@ -1201,7 +963,7 @@
                 }else{
                     mokhadavl = source.getLayer("geonode:mokhada_village_boundary").addTo(mymap);
                 }
-
+                
             }
 
             function addPondaLinesLayer(){
@@ -1212,7 +974,7 @@
                 }else{
                     pondalinelyr = source.getLayer("geonode:ponda_goa_polylines").addTo(mymap);
                 }
-
+                
             }
 
             function addPondaPolygonsLayer(){
@@ -1223,7 +985,7 @@
                 }else{
                     pondapolygonlyr = source.getLayer("geonode:ponda_goa_polygons_1").addTo(mymap);
                 }
-
+                
             }
 
             function addPondaPointsLayer(){
@@ -1234,7 +996,7 @@
                 }else{
                     pondapointlyr = source.getLayer("geonode:ponda_goa_points").addTo(mymap);
                 }
-
+                
             }
 
             function addBuildingLayer(){
@@ -1245,7 +1007,7 @@
                 }else{
                     building = source.getLayer("geonode:buildings_in_hwest").addTo(mymap);
                 }
-
+                
             }
 
             function addCorporatorLayer(){
@@ -1256,12 +1018,12 @@
                 }else{
                     corporatorwise = L.geoJSON.ajax('data/corporator_boundries.geojson', {
                      //pointToLayer: returnCompMarker, filter:filterComp
-                     // filter: function(feature, layer) {
+                     // filter: function(feature, layer) {   
                      //     return (feature.properties.society_name === "Amber");
                      //   }
                   }).addTo(mymap);
                 }
-
+                
             }
             function addCorporatorSegLayer(){
                 console.log('this is corporator Segeregation');
@@ -1271,12 +1033,12 @@
                 }else{
                     compseg = L.geoJSON.ajax('data/corporator_boundries.geojson', {
                      pointToLayer: returnCorpsegMarker
-                     // filter: function(feature, layer) {
+                     // filter: function(feature, layer) {   
                      //     return (feature.properties.society_name === "Amber");
                      //   }
                   }).addTo(mymap);
                 }
-
+                
             }
 
             function addBuildsegLayer(){
@@ -1287,13 +1049,13 @@
                 }else{
                    buildseg = L.geoJSON.ajax('data/swm_hwest/swm_hwest.geojson', {
                      pointToLayer: returnEagleMarker, filter:filterEagle
-                     // filter: function(feature, layer) {
+                     // filter: function(feature, layer) {   
                      //     return (feature.properties.society_name === "Amber");
                      //   }
                   }).addTo(mymap);
 
                 }
-
+                
             }
 
             function addBuildcompLayer(){
@@ -1304,13 +1066,13 @@
                 }else{
                    buildcomp = L.geoJSON.ajax('data/swm_hwest/swm_hwest.geojson', {
                      pointToLayer: returnCompMarker, filter:filterComp
-                     // filter: function(feature, layer) {
+                     // filter: function(feature, layer) {   
                      //     return (feature.properties.society_name === "Amber");
                      //   }
                   }).addTo(mymap);
 
                 }
-
+                
             }
 
             function addBuildweightLayer(){
@@ -1321,17 +1083,17 @@
                 }else{
                    buildweight = L.geoJSON.ajax('data/swm_hwest/swm_hwest.geojson', {
                      pointToLayer: returnWeightMarker
-                     // filter: function(feature, layer) {
+                     // filter: function(feature, layer) {   
                      //     return (feature.properties.society_name === "Amber");
                      //   }
                   }).addTo(mymap);
 
                 }
-
+                
             }
 
 
-
+           
 
             var myLayerList = [];
             function addMyLayer(geonode_source){
@@ -1343,7 +1105,7 @@
 
                 }else{
                     console.log('add'+geonode_source);
-                    // info.toFront(geonode_);
+                    // info.toFront(geonode_); 
                     source.getLayer(geonode_source).addTo(mymap);
                     myLayerList.push(geonode_source);
                 }
@@ -1372,13 +1134,13 @@
                         layer.bindPopup('Building Name: '+feature.properties.bldg_name+ "<br />No. of Buildings: "+feature.properties.flats+"<br/>No. of Rowhouses: "+feature.properties.rowhouses+"<br/>Levels of Segregation: "+feature.properties.level_seg+"(Dry/Wet)<br/><b>Are there any locations inside the society for disposing other types of waste</b><br/>Ewaste: "+feature.properties.ewaste+"<br/>Glass: "+feature.properties.glass+"<br/>Plastic: "+feature.properties.plastic+"<br/>Sanitary Waste: "+feature.properties.sanitary+"<br/>Coconut Waste: "+feature.properties.coconut+"<br/>In-house Composting: "+feature.properties.composting+"<br/>N P K H Values: "+feature.properties.n_p_k_h+"<br/>Approx Trees in Society: "+feature.properties.trees+"<br/>No of Gardens / Play / Open Spaces in Society: "+feature.properties.open_space+"<br/>Is Compost Available for Sale: "+feature.properties.comp_sale+"<br/>Bird Conservation: "+feature.properties.b_consrv+"<br/>Tree Conservation: "+feature.properties.t_consrv+"<br/>STP Plant: "+feature.properties.stp_plant);
                       }
                      // pointToLayer: returnPuneBuildMarker
-                     // filter: function(feature, layer) {
+                     // filter: function(feature, layer) {   
                      //     return (feature.properties.society_name === "Amber");
                      //   }
                   }).addTo(mymap);
 
                 }
-
+                
             }
 
             function addVoterList(){
@@ -1394,13 +1156,13 @@
                         layer.bindPopup('Building Name: प्रभागाचा परिसर : <br/>यादी भाग क्र.२ ६ १ : १ … पुष्पलोक ड्रीमलेंड, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, <br/>यादी भाग क्र.२ ६ १ : १० … स्नेहा ड्रीमलेंड, गुरु गोविंद सिंगमार्ग, मुलुड पश्चिम, <br/>यादी भाग क्र.२ ६ १ : १ १ … पुष्पा कुटीर, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, <br/>यादी भाग क्र.२ ६ १ : १२ … कृष्णा निवास, गुरुगोविंद सिंग मानी मुलुड पश्चिम, <br/>यादी भाग क्र.२ ६ १ : १३ … विक्रम, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, <br/>यादी भाग क्र.२ ६ १ : १४ … अशियाना,गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, यादी भाग क्र की ६ १ : १ ५ … गणेश बाग, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, यादी भाग क्र की ६ १ : १६ …रवीकुंजन, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, <br/>यादी भाग क्र.२ ६ १ : १७ … यशीधन, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, <br/>यादी भाग क्र.२ ६ १ :१ ८ … अमर निवास, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, <br/>यादी भाग क्र.२ ६ १ : १९ … छोकरा निवास, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, यादीभाग क्र की ६ १ : २ … ड्रीमलेंड, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, <br/>यादी भाग क्र.२ ६ १ : २० … आशिर्वाद, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम,<br/>यादी भाग क्र.२ ६ १ : २१ … सिंग निवास, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, यादी भाग क्र की ६ १ : २२ … पितृछाया, गुरु गोविंद सिंग मार्ग, मुलुडपश्चिम, यादी भाग क्र की ६ १ : २३ … मातृछाया ड्रीमलेंड, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, <br/>यादी भाग क्र.२ ६ १ : २४ … केंद्रीय कर्मचारीसोसायटी ड्रीमलेंडच्या बाजुला, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, यादी भाग क्र की ६ १ : २५ … हायलेंड पली, गुरु गोविंद सिंग मार्ग, मुलुडपश्चिम, यादी भाग क्र की ६ १ : २६ … बी… १ हायलेंड अपार्टमेंट, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, यादी भाग क्र की ६ १ : २७ … सी… १ हायलेंडअपार्टमेंट, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, <br/>यादी भाग क्र.२ ६ १ : २८ … रचना गार्डन डेंफोडील सोसायटी, गुरु गोविंद सिंग मार्ग, मुलुडपश्चिम, यादी भाग क्र की ६ १ : २९ … अमरनगर मुलुड कॉलनी, गुरु गोविंद सिंग मार्ग, मुलुड पश्चिम, यादी भाग क्र की ६ १ : में … अंबे निवास, गुरुगोविंद सिंग मानी मुलुड पश्चिम, <br/>यादी भाग क्र.२ ६ १ : ३० … एफ हायलेंड पाती, दर्गा रोड, मुलुड पश्चिम, यादी भाग क्र की ६ १ : में १ … सी… १');
                       }
                      // pointToLayer: returnPuneBuildMarker
-                     // filter: function(feature, layer) {
+                     // filter: function(feature, layer) {   
                      //     return (feature.properties.society_name === "Amber");
                      //   }
                   }).addTo(mymap);
 
                 }
-
+                
             }
 
             function addPuneRoad(){
@@ -1411,13 +1173,13 @@
                 }else{
                    puneroad = L.geoJSON.ajax('data/pune_roads_geo.geojson', {
                      pointToLayer: returnPuneRoadMarker
-                     // filter: function(feature, layer) {
+                     // filter: function(feature, layer) {   
                      //     return (feature.properties.society_name === "Amber");
                      //   }
                   }).addTo(mymap);
 
                 }
-
+                
             }
             function addPunePhotos(){
                 console.log('this is pune photos ');
@@ -1427,15 +1189,15 @@
                 }else{
                    punephotos = L.geoJSON.ajax('data/latest_pune_photos.geojson', {
                      pointToLayer: returnPunePhotosMarker
-                     // filter: function(feature, layer) {
+                     // filter: function(feature, layer) {   
                      //     return (feature.properties.society_name === "Amber");
                      //   }
                   }).addTo(mymap);
 
                 }
-
+                
             }
-
+            
 
             function addRoadLayer(){
                 console.log('Road');
@@ -1445,8 +1207,8 @@
                 }else{
                     roads = source.getLayer("geonode:road_in_grid").addTo(mymap);
                 }
-
-
+               
+                
             }
 
             function addPrimaryLayer(){
@@ -1456,7 +1218,7 @@
                     primarys =0;
                 }else{
                     primarys = source.getLayer("geonode:school_may310").addTo(mymap);
-                }
+                }  
             }
 
             function addDistrictLayer(){
@@ -1467,7 +1229,7 @@
                     districtL =0;
                 }else{
                     districtL = source.getLayer("geonode:district_boundaries_of_maharashtra").addTo(mymap);
-                }
+                }  
             }
 
             function addWardLayer(){
@@ -1478,9 +1240,9 @@
                     wardl =0;
                 }else{
                     wardl = source.getLayer("geonode:mumbai_ward_boundary").addTo(mymap);
-                }
+                }  
             }
-
+            
 
             function addVillageLayer(){
                 console.log('Village layer');
@@ -1490,10 +1252,10 @@
                     villagel =0;
                 }else{
                     villagel = source.getLayer("geonode:village_2700").addTo(mymap);
-                }
+                }  
             }
 
-
+            
             function addHLPCALayer(){
                 console.log('HLPCA layer');
                 mymap.setZoom(7);
@@ -1502,7 +1264,7 @@
                     hlpcal =0;
                 }else{
                     hlpcal = source.getLayer("geonode:hlpca").addTo(mymap);
-                }
+                }  
             }
 
             function addTown2700Layer(){
@@ -1513,7 +1275,7 @@
                     townl =0;
                 }else{
                     townl = source.getLayer("geonode:town_2700").addTo(mymap);
-                }
+                }  
             }
 
             function addBFHVLLayer(){
@@ -1523,7 +1285,7 @@
                     bfhvll =0;
                 }else{
                     bfhvll = source.getLayer("geonode:s_ward_buffer_for_high_voltage_line_2").addTo(mymap);
-                }
+                }  
             }
 
             function addBFRLayer(){
@@ -1533,7 +1295,7 @@
                     bfrl =0;
                 }else{
                     bfrl = source.getLayer("geonode:s_ward_bufferforrailway").addTo(mymap);
-                }
+                }  
             }
 
             function addHVLLayer(){
@@ -1543,7 +1305,7 @@
                     hvll =0;
                 }else{
                     hvll = source.getLayer("geonode:s_ward_high_voltage_line").addTo(mymap);
-                }
+                }  
             }
 
             function addMRLLayer(){
@@ -1553,7 +1315,7 @@
                     mrll =0;
                 }else{
                     mrll = source.getLayer("geonode:s_ward_metrorailline1_station").addTo(mymap);
-                }
+                }  
             }
 
             function addOSMBLayer(){
@@ -1563,7 +1325,7 @@
                     osmbl =0;
                 }else{
                     osmbl = source.getLayer("geonode:osm_building_s_ward").addTo(mymap);
-                }
+                }  
             }
 
             function addPolyLayer(){
@@ -1573,7 +1335,7 @@
                     polyl =0;
                 }else{
                     polyl = source.getLayer("geonode:s_ward_all_polygone").addTo(mymap);
-                }
+                }  
             }
 
             function addPondLayer(){
@@ -1583,7 +1345,7 @@
                     pondl =0;
                 }else{
                     pondl = source.getLayer("geonode:s_ward_pond").addTo(mymap);
-                }
+                }  
             }
 
             function addRailLayer(){
@@ -1593,10 +1355,10 @@
                     raill =0;
                 }else{
                     raill = source.getLayer("geonode:s_ward_railwaytrack_station").addTo(mymap);
-                }
+                }  
             }
 
-
+            
             function addLWardBuildingLayer(){
                 console.log('l ward building');
                 if(lwardbl){
@@ -1604,7 +1366,7 @@
                     lwardbl =0;
                 }else{
                     lwardbl = source.getLayer("geonode:l_ward_osm_building").addTo(mymap);
-                }
+                }  
             }
 
             function addPadsBoundaryLayer(){
@@ -1614,7 +1376,7 @@
                     pbl =0;
                 }else{
                     pbl = source.getLayer("geonode:pads_bondry").addTo(mymap);
-                }
+                }  
             }
 
             function addPadsBuildingLayer(){
@@ -1624,7 +1386,7 @@
                     pbul =0;
                 }else{
                     pbul = source.getLayer("geonode:pads_all_buildingfootprint").addTo(mymap);
-                }
+                }  
             }
 
             function addPadsGardenLayer(){
@@ -1634,7 +1396,7 @@
                     pgl =0;
                 }else{
                     pgl = source.getLayer("geonode:pads_garden").addTo(mymap);
-                }
+                }  
             }
 
             function addPadsStreetLayer(){
@@ -1644,7 +1406,7 @@
                     psl =0;
                 }else{
                     psl = source.getLayer("geonode:pads_street").addTo(mymap);
-                }
+                }  
             }
 
             function addPondaHospitalLayer(){
@@ -1654,7 +1416,7 @@
                     pondahl =0;
                 }else{
                     pondahl = source.getLayer("geonode:ponda_pt_hospital").addTo(mymap);
-                }
+                }  
             }
 
             function addPondaSchoolLayer(){
@@ -1664,7 +1426,7 @@
                     pondasl =0;
                 }else{
                     pondasl = source.getLayer("geonode:ponda_pt_school").addTo(mymap);
-                }
+                }  
             }
 
             function addPondaWorshipLayer(){
@@ -1674,7 +1436,7 @@
                     pondawl =0;
                 }else{
                     pondawl = source.getLayer("geonode:ponda_pt_worship").addTo(mymap);
-                }
+                }  
             }
 
             function addPondaFoodLayer(){
@@ -1684,7 +1446,7 @@
                     pondafl =0;
                 }else{
                     pondafl = source.getLayer("geonode:ponda_pt_food_1").addTo(mymap);
-                }
+                }  
             }
 
             function addPondaOtherLayer(){
@@ -1694,7 +1456,7 @@
                     pondaol =0;
                 }else{
                     pondaol = source.getLayer("geonode:ponda_pt_others").addTo(mymap);
-                }
+                }  
             }
 
             //filter functions
@@ -1817,3 +1579,4 @@
         </script>
     </body>
 </html>
+
